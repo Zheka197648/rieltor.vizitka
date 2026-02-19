@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Риэлтор в Иркутске | Елена Ямковая</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --accent: #3f51b5;
+      --accent-dark: #2f3b8f;
+      --text: #222222;
+      --muted: #666666;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      background: linear-gradient(135deg, #303f9f, #5c6bc0);
+      color: #fff;
+      padding: 32px 16px 40px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 20px;
+      align-items: center;
+    }
+    .hero-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .hero-subtitle {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .hero-meta {
+      font-size: 14px;
+      color: #e0e0ff;
+      margin-bottom: 20px;
+    }
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid rgba(255,255,255,0.7);
+      color: #fff;
+      background: transparent;
+      text-decoration: none;
+      transition: all .15s ease-in-out;
+    }
+    .btn.primary {
+      background: #fff;
+      color: var(--accent-dark);
+      border-color: #fff;
+    }
+    .btn:hover {
+      background: rgba(255,255,255,0.1);
+    }
+    .btn.primary:hover {
+      background: #f3f3ff;
+    }
+    .hero-image {
+      width: 100%;
+      max-width: 360px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      display: block;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+    main {
+      padding: 24px 0 40px;
+    }
+    section {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px 18px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(15,22,40,0.06);
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+    h3 {
+      margin-top: 16px;
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+    .muted { color: var(--muted); font-size: 14px; }
+    ul {
+      padding-left: 18px;
+      margin: 6px 0 0;
+    }
+    li { margin-bottom: 4px; }
+    .faq-item {
+      margin-bottom: 10px;
+    }
+    .faq-question {
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .section-image {
+      width: 100%;
+      max-width: 640px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      display: block;
+      object-fit: cover;
+    }
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .pill-link {
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #eef0ff;
+      font-size: 14px;
+    }
+    footer {
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+      padding: 16px 8px 24px;
+    }
+    @media (max-width: 720px) {
+      .hero-wrap {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero-title { font-size: 24px; }
+      .hero-subtitle { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container hero-wrap">
+    <div>
+      <div class="hero-title">Риэлтор по недвижимости в Иркутске</div>
+      <div class="hero-subtitle">
+        Помогаю выгодно продать, безопасно купить и спокойно снять жильё в Иркутске и области
+      </div>
+      <div class="hero-meta">
+        Стаж работы — 9 лет · Специализация: квартиры, комнаты, дома, участки · Выход на сделку без лишних нервов и «сюрпризов»
+      </div>
+      <div class="btn-row">
+        <a class="btn primary" href="tel:+789041461081">Позвонить: 8 904 146‑10‑81</a>
+        <a class="btn" href="https://t.me/Elena_Yamkovaya" target="_blank" rel="noopener">Написать в Telegram</a>
+      </div>
+    </div>
+    <div>
+      <img
+        src="https://picsum.photos/seed/realtor/800/600"
+        alt="Риэлтор показывает квартиру клиентам"
+        class="hero-image">
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section id="services">
+      <h2>Услуги</h2>
+
+      <img
+        src="https://picsum.photos/seed/apartment/1000/700"
+        alt="Интерьер современной квартиры"
+        class="section-image">
+
+      <h3>Продажа квартиры или дома</h3>
+      <p><strong>Кому подходит:</strong> собственникам, которые хотят продать недвижимость по рыночной цене и без затяжных показов.</p>
+      <p><strong>Что входит:</strong> анализ рынка и цены, подготовка объекта к продаже, фото и объявления, размещение на площадках, показы, переговоры, сопровождение сделки у нотариуса или в МФЦ.</p>
+      <p><strong>Результат:</strong> проданная квартира или дом по обоснованной цене, с проверенным покупателем и полным набором документов.</p>
+
+      <h3>Покупка недвижимости</h3>
+      <p><strong>Кому подходит:</strong> тем, кто покупает квартиру, комнату, дом или участок для жизни или инвестиций.</p>
+      <p><strong>Что входит:</strong> подбор вариантов под ваш бюджет и запрос, проверка документов и обременений, согласование условий, сопровождение сделки и расчётов.</p>
+      <p><strong>Результат:</strong> безопасная покупка без скрытых проблем по документам и рисков потерять деньги.</p>
+
+      <h3>Аренда и сдача жилья</h3>
+      <p><strong>Кому подходит:</strong> собственникам, которые хотят сдавать квартиру надёжным арендаторам, и тем, кто ищет жильё в аренду.</p>
+      <p><strong>Что входит:</strong> поиск арендаторов, проверка платёжеспособности, подготовка договора, фиксирование показаний счётчиков, передача ключей.</p>
+      <p><strong>Результат:</strong> сдача или съём жилья с минимальными рисками конфликтов и задержек платежей.</p>
+    </section>
+
+    <section id="why">
+      <h2>Почему работают со мной</h2>
+      <p>Объясняю нюансы простым языком, без сложной «юридической» терминологии.</p>
+      <p>Проверяю юридическую чистоту объектов перед сделкой и помогаю с ипотекой и взаимодействием с банками.</p>
+      <p>Работаю официально, фиксирую договорённости в договоре и экономлю ваше время: беру на себя показы, переговоры и сбор документов.</p>
+      <p>Не завышаю и не занижаю цену — ориентируюсь на реальные сделки, сопровождаю до получения ключей и регистрации права собственности.</p>
+      <p>Всегда на связи по важным вопросам и не пропадаю после сделки.</p>
+    </section>
+
+    <section id="clients">
+      <h2>Кому я помогаю</h2>
+
+      <img
+        src="https://picsum.photos/seed/house/1000/700"
+        alt="Жилой дом, пример недвижимости"
+        class="section-image">
+
+      <h3>Сегменты клиентов</h3>
+      <ul>
+        <li>Собственники квартир и домов в Иркутске и области</li>
+        <li>Покупатели первой недвижимости</li>
+        <li>Инвесторы, покупающие квартиры для сдачи в аренду</li>
+        <li>Семьи, которые расширяются или уменьшают метраж</li>
+        <li>Те, кто переезжает в другой город и продаёт жильё в Иркутске</li>
+      </ul>
+
+      <h3>Типовые ситуации</h3>
+      <ul>
+        <li>Нужно быстро и безопасно продать квартиру</li>
+        <li>Хотите купить жильё, но боитесь «проблемных» объектов</li>
+        <li>Не хотите тратить время на показы и переговоры</li>
+        <li>Планируете ипотеку и не понимаете, с чего начать</li>
+        <li>Есть покупатель, но нужна помощь с документами и сделкой</li>
+      </ul>
+    </section>
+
+    <section id="process">
+      <h2>Как строится работа</h2>
+      <ol>
+        <li><strong>Заявка или звонок</strong> — вы рассказываете, что хотите: продать, купить или снять жильё.</li>
+        <li><strong>Знакомство и анализ</strong> — уточняю бюджет, сроки, район, тип недвижимости и вашу ситуацию.</li>
+        <li><strong>Согласование стратегии и стоимости</strong> — обсуждаем план действий и стоимость моих услуг.</li>
+        <li><strong>Поиск или продвижение объекта</strong> — запускаю рекламу или подбираю варианты, организую показы.</li>
+        <li><strong>Сделка</strong> — готовлю и проверяю документы, сопровождаю подписание и расчёты.</li>
+        <li><strong>Поддержка после</strong> — помогаю с регистрацией права, передаточными актами и бытовыми вопросами.</li>
+      </ol>
+    </section>
+
+    <section id="faq">
+      <h2>Ответы на частые вопросы</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">Вы работаете только в Иркутске?</div>
+        <div>Основные сделки — в Иркутске и ближайших районах. Возможны дистанционные сделки с продавцами и покупателями из других городов.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Сколько стоят ваши услуги?</div>
+        <div>Оплата зависит от типа услуги: сопровождение сделки, подбор объекта, продажа «под ключ». Конкретную стоимость озвучиваю после знакомства с задачей.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Вы проверяете юридическую чистоту объекта?</div>
+        <div>Да, проверяю историю перехода прав, наличие обременений, арестов, долгов по коммунальным платежам и других рисков.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Вы работаете с ипотекой?</div>
+        <div>Помогаю подобрать банк и программу, собрать пакет документов, взаимодействовать с менеджером банка и безопасно провести расчёты.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Можно ли провести сделку дистанционно?</div>
+        <div>Часть этапов (подбор, согласование условий, подготовка документов) можно сделать дистанционно. Итоговое подписание — в МФЦ или у нотариуса.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Подбираете ли вы арендаторов?</div>
+        <div>Да, помогаю собственникам найти надёжных арендаторов, заключить договор и передать квартиру по акту.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Что нужно для начала работы?</div>
+        <div>Достаточно позвонить или написать. Я задам несколько вопросов и предложу варианты, как лучше двинуться в вашей ситуации.</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Давайте разберём вашу ситуацию</h2>
+      <p>Напишите или позвоните — предложу варианты, как выгодно продать, безопасно купить или спокойно снять жильё в Иркутске.</p>
+
+      <div class="contact-links">
+        <a class="pill-link" href="tel:+789041461081">Позвонить: 8 904 146‑10‑81</a>
+        <a class="pill-link" href="https://t.me/Elena_Yamkovaya" target="_blank" rel="noopener">t.me/Elena_Yamkovaya</a>
+      </div>
+
+      <p class="muted" style="margin-top:12px;">
+        Работаю по предварительной договорённости. Отвечаю в мессенджерах с 9:00 до 20:00 ежедневно.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  © 2026, риэлтор в Иркутске. Все права защищены.
+</footer>
+</body>
+</html>
